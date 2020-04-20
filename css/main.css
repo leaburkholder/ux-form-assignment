@@ -17,6 +17,8 @@ body {
 .box {
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .smoky {
@@ -69,4 +71,21 @@ button {
     font-size: 14px;
     border-radius: 9999px;
     margin-top: 10px;
+}
+
+.selectWrapper {
+    position: relative;
+} 
+.selectWrapper:after {
+    content: '>';
+    font: 17px "Consolas", monospace;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    position: absolute;
+    pointer-events: none;
+
+    right: 10px;
+    bottom: 15px;
 }
