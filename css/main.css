@@ -23,8 +23,9 @@ body {
 
 .smoky {
     height: 300px;
-    width: 100%;
-    object-fit: cover;
+    background-image: url("../images/bg-heading-03.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 form {
@@ -88,4 +89,20 @@ button {
 
     right: 10px;
     bottom: 15px;
+}
+
+@media (min-width: 767px) {
+    .box {
+        flex-direction: row;
+        max-width: 600px;
+        width: 100%;
+    }
+    .smoky {
+        height: auto;
+        flex: 1;
+    }
+    form {
+        flex: 1;
+        padding: 40px;
+    }
 }
